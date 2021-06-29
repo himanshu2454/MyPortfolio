@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./Static/Hero2.jpg");
+  background-color: linear-gradient(to right, #8e0e00, #1f1c18);
+  background-size: 100% 100%;
+}
+
+.headingContainer {
+  margin-left: 5em;
+}
+
+.desgContainer {
+  margin-top: 1rem;
+  margin-left: 5em;
+}
+
+.buttonContainer {
+  margin-top: 3rem;
+  margin-left: 5em;
+}
+
+#title {
+  color: white;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 800;
+  border-left: 5px solid red;
+}
+
+#comma {
+  color: red;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+
+#desg {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  border-bottom: 5px solid red;
+}
+
+#hirebutton {
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+
+  font-weight: 800;
+
+  padding: 1em;
+  border-radius: 10px;
+
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 632px) {
+  .mainContainer {
+    background-image: url("./Static/Mobhero.jpg");
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  .headingContainer {
+    margin-left: 4em;
+  }
+
+  .desgContainer {
+    margin-left: 4em;
+  }
+
+  .buttonContainer {
+    margin-top: 3rem;
+    margin-left: 4em;
+  }
+
+  #title {
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 800;
+    border-left: 5px solid red;
+  }
+}
