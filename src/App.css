@@ -8,9 +8,17 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-image: url("./Static/Hero2.jpg");
-  background-color: linear-gradient(to right, #8e0e00, #1f1c18);
+  /* background-image: url("./Static/LandingImage.gif"); */
+  background-image: linear-gradient(to right, #8e0e00, #1f1c18);
   background-size: 100% 100%;
+  font-family: "El Messiri", sans-serif;
+}
+
+.skillContainer {
+  color: #ffffff;
+  background-color: #1f1c18;
+  width: 100vw;
+  height: 100vh;
 }
 
 .headingContainer {
@@ -20,10 +28,12 @@
 .desgContainer {
   margin-top: 1rem;
   margin-left: 5em;
+  color: white;
 }
 
 .buttonContainer {
-  margin-top: 3rem;
+  /* display: flex; */
+  margin-top: 1rem;
   margin-left: 5em;
 }
 

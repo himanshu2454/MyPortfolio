@@ -1,36 +1,29 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import HireModal from "./Modal/Modal";
+import { formContext } from "./context/formcontext";
+import Parent from "./components/maincontainer";
 import "./App.css";
-// import Modal from "./Modal/Modal";
 
-function App() {
-  // const [ModalFlag, setFlag] = useState(false);
+export default function App() {
+  const [ModalFlag, setFlag] = useState(false);
 
-  // const handleWannaConnect = () => {
-  //   setFlag(true);
-  // };
+  const modelcontext = {
+    ModalFlag,
+    setFlag,
+  };
 
   return (
     <div className="App">
-      <div className="mainContainer">
-        <div style={{ "margin-top": "5em" }} className="headingContainer">
-          <span id="title">
-            Hi<span id="comma">,</span>
-          </span>
+      <formContext.Provider value={modelcontext}>
+        <div>
+          <Parent />
+          {ModalFlag ? (
+            <HireModal show={ModalFlag} onHide={() => setFlag(false)} />
+          ) : (
+            ""
+          )}
         </div>
-        <div className="headingContainer">
-          <span id="title">I'm Himanshu</span>
-        </div>
-        <div className="desgContainer">
-          <span id="desg">Software Developer</span>
-        </div>
-        <div className="buttonContainer">
-          <button id="hirebutton">Wanna connect ?</button>
-        </div>
-      </div>
-
-      {/* {ModalFlag ? <Modal /> : ""} */}
+      </formContext.Provider>
     </div>
   );
 }
-
-export default App;
