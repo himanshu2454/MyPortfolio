@@ -2,15 +2,15 @@ import { useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "./Modal.css";
-import { formContext } from "../context/formcontext";
+// import { formContext } from "../context/formcontext";
 
 export default function HireModal(props) {
-  const { setFlag } = useContext(formContext);
+  // const { setFlag } = useContext(formContext);
 
-  const showForm = () => {
-    props.onHide();
-    setFlag(true);
-  };
+  // const showForm = () => {
+  //   props.onHide();
+  //   setFlag(true);
+  // };
 
   return (
     <Modal
